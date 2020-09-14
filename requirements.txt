@@ -1,0 +1,8 @@
+KEBUTUHAN SISTEM
+======================
+
+- Ubuntu / Linux lainnya
+- PostgreSQL
+- Java SDK
+- Apache web server
+- timeout (aplikasi ubuntu)

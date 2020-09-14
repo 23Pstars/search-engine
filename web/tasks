@@ -1,0 +1,35 @@
+19 Feb 2013
+===========
+
+* agent alive count (x)
+* memasukkan tiap objek HostDirectory ke dalam sebuah HashMap (x)
+* melakukan pengecekan kedalam HashMap kemudian menghentikan program jika isi HashMap kosong (x)
+
+21 Feb 2013
+===========
+
+* HostAgent mulai melakukan pencarian pada web page
+
+27 Feb 2013
+===========
+
+* HostAgent mencari link yang ada pada web page dan menyimpannya kedalam list
+* HostAgent melakukan pemeriksaan subdirectory untuk satu host (deep)
+
+03 Mar 2013
+===========
+
+* mengumpulkan list host baru dari bot agent
+
+06 Mar 2013
+===========
+
+* mengirim host baru ke ServerAgent
+* Jika menemukan host baru membuat HostAgent baru
+- membuat bot agent untuk tiap link yang ditemukan dengan level link dibawah current
+- membuat bot agent memeriksa link yang diberikan dimana max deep level link yang akan di kirim ke HostAgent adalah max
+- mengirim link yang ditemukan ke host agent masing - masing boa agent
+- memasukkan host baru yang telah diterima kedalam database
+- membuat timeout (server) untuk menghindari server looping tanpa akhir (konfigurasi)
+- menampilkan dan menyimpan hasil pencarian (database)
+- filter input keyword hanya huruf dan angka saja
